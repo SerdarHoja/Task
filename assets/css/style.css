@@ -1,0 +1,566 @@
+@font-face {
+    font-family: 'Rbt';
+    src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/Robotolight.woff2') format('woff2'), url('../fonts/Robotolight.woff') format('woff'), url('../fonts/Robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rbt';
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto.woff2') format('woff2'), url('../fonts/Roboto.woff') format('woff'), url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rbt';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Robotomedium.woff2') format('woff2'), url('../fonts/Robotomedium.woff') format('woff'), url('../fonts/Robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rbt';
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Robotobold.woff2') format('woff2'), url('../fonts/Robotobold.woff') format('woff'), url('../fonts/Robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rbt';
+    src: local('Roboto Black'), local('Roboto-Black'), url('../fonts/Robotoblack.woff2') format('woff2'), url('../fonts/Robotoblack.woff') format('woff'), url('../fonts/Robotoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('../fonts/Roboto-bold.ext.woff2');
+    font-weight: bold;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-normal.ext.woff2');
+    font-weight: 900;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-medium.ext.woff2');
+    font-weight: 500;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-regular.ext.woff2');
+    font-weight: normal;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-light.ext.woff2');
+    font-weight: 100;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-bold.woff2');
+    font-weight: bold;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-normal.woff2');
+    font-weight: 900;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-medium.woff2');
+    font-weight: 500;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-regular.woff2');
+    font-weight: normal;
+    font-family: 'Rbt';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-light.woff2');
+    font-weight: 100;
+    font-family: 'Rbt';
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-family: 'Rbt';
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 0 50px;
+    width: 1100px;
+    margin: 0px auto;
+}
+
+:root {
+    --c1: #C0C0C0;
+    --c2: #707070;
+    --c3: #F5A481;
+    --c4: #FFD052;
+    --c5: #036D58;
+    --bg_c1: #E0E0E0;
+    --c_white: #fff;
+    /* background-color 1 */
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg_c1);
+    cursor: url('../images/cursor.svg'), pointer;
+}
+
+
+/* font-weight */
+
+.fw_bold {
+    font-weight: bold;
+}
+
+.fw_900 {
+    font-weight: 900;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_100 {
+    font-weight: 100;
+}
+
+
+/* font size */
+
+.fs_65 {
+    font-size: 65px;
+}
+
+.fs_60 {
+    font-size: 55px;
+}
+
+.fs_40 {
+    font-size: 35px;
+}
+
+.fs_30 {
+    font-size: 30px;
+}
+
+.fs_25 {
+    font-size: 25px;
+}
+
+.fs_23 {
+    font-size: 23px;
+}
+
+.fs_20 {
+    font-size: 20px;
+}
+
+.fs_18 {
+    font-size: 18px;
+}
+
+.fs_16,
+p {
+    font-size: 16px;
+}
+
+.fs_14 {
+    font-size: 14px;
+}
+
+.fs_12 {
+    font-size: 12px;
+}
+
+
+/* line-height */
+
+.ln_36 {
+    line-height: 36px;
+}
+
+.ln_24 {
+    line-height: 24px;
+}
+
+.ln_45 {
+    line-height: 45px;
+}
+
+.ln_150 {
+    line-height: 150%;
+}
+
+.ln_54 {
+    line-height: 54px;
+}
+
+.ln_180 {
+    line-height: 180%;
+}
+
+.ln_22 {
+    line-height: 22px;
+}
+
+.ln_35 {
+    line-height: 35px;
+}
+
+
+/* display */
+
+.d_block {
+    display: block;
+}
+
+.d_iblock {
+    display: inline-block;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.d_no {
+    display: none;
+}
+
+.disabled {
+    background-color: grey!important;
+    cursor: not-allowed!important;
+}
+
+
+/* others */
+
+.a_items {
+    align-items: center;
+}
+
+.flex_sp {
+    justify-content: space-between;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.text_c {
+    text-align: center;
+}
+
+.t_upper {
+    text-transform: uppercase;
+    ;
+}
+
+.ls_no {
+    list-style: none;
+}
+
+.t_dcrtn_no {
+    text-decoration: none;
+}
+
+.m_center {
+    margin: 0 auto;
+    display: block;
+}
+
+.h100 {
+    height: 100vh;
+}
+
+
+/* colors */
+
+.c1 {
+    color: var(--c1);
+}
+
+
+/* main color */
+
+.c_white {
+    color: white;
+}
+
+
+/* main color */
+
+
+/* background-color */
+
+.bg_c1 {
+    background-color: var(--c1);
+}
+
+.bg_c3 {
+    background-color: var(--c3);
+}
+
+.bg_l1 {
+    background-color: var(--c_l1);
+}
+
+.bg_l4 {
+    background-color: var(--c_l4);
+}
+
+.bg_white {
+    background-color: white;
+}
+
+
+/* width */
+
+.w100 {
+    width: 100%;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w45 {
+    width: 45%;
+}
+
+.w31 {
+    width: 31%;
+}
+
+.w62 {
+    width: calc(62% + 40px);
+}
+
+.w25 {
+    width: 25%;
+}
+
+
+/* padding */
+
+.p_t100 {
+    padding-top: 100px;
+}
+
+.p_50_0 {
+    padding: 50px 0;
+}
+
+.p_b60 {
+    padding-bottom: 60px;
+}
+
+.p_b25 {
+    padding-bottom: 25px;
+}
+
+
+/* border radius */
+
+.b_r50 {
+    border-radius: 50px;
+}
+
+
+/* position */
+
+.p_abs {
+    position: absolute;
+}
+
+.p_rel {
+    position: relative;
+}
+
+.p_fixed {
+    position: fixed;
+}
+
+
+/* hovers */
+
+.hover1:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.hover2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hover3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--c1);
+}
+
+.task-box {
+    background-color: var(--c1);
+    opacity: 1;
+    border-radius: 20px;
+    border: none;
+    padding: 25px 205px 25px 15px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    cursor: url('../images/cursor.svg'), pointer;
+    outline: none;
+    resize: none;
+    height: 74px;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 75px;
+    width: 725px;
+    z-index: -1;
+    font-size: 20px;
+    background: var(--bg_c1);
+    padding: 10px 0;
+    color: #505050;
+}
+
+.task-box:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.pl_more {
+    padding-left: 75px !important;
+}
+
+.filled {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    margin-left: 20px;
+    margin-top: 15px;
+    background: var(--bg_c1);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    animation: myfirst .1s;
+    animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0% {
+        width: 0;
+        height: 0;
+        margin-left: 0px;
+        background: var(--bg_c1);
+    }
+    25% {
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+        background: var(--bg_c1);
+    }
+    50% {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        background: var(--bg_c1);
+    }
+    75% {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+        background: var(--bg_c1);
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        background: var(--bg_c1);
+    }
+}
+
+.triangle {
+    display: none;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 25px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    transform: rotate(270deg);
+}
+
+.calendar {
+    display: none;
+    margin-left: -190px;
+    padding: 10px;
+    background: var(--bg_c1);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.calendar img {
+    width: 100%;
+}
+
+.list {
+    display: none;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px;
+    background: var(--bg_c1);
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    z-index: 2;
+}
+
+.square {
+    width: 15px;
+}
+
+.down {
+    width: 15px;
+}
+
+.addspan {
+    color: red;
+    opacity: 0.5;
+}
+
+#nhide {
+    color: red;
+    opacity: 0.5;
+}

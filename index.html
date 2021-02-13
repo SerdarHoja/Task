@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/action.js"></script>
+    <title>Notes</title>
+</head>
+
+<body>
+    <div class="wrapper d_flex a_items h100">
+        <div class="d_flex w100">
+            <div class="filled"></div>
+            <div class="triangle"></div>
+            <textarea type="text" id="task" class="task-box" placeholder="Write a new task"></textarea>
+            <span class="text"></span>
+            <div class="calendar">
+                <img src="assets/images/calendar.svg">
+            </div>
+            <div class="d_flex flex_sp list">
+                <img class="square" src="assets/images/square.svg" alt="">
+                <p>No list</p>
+                <img class="down" src="assets/images/down.svg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var textarea = document.getElementById("task");
+    textarea.oninput = function() {
+        textarea.style.height = "";
+        textarea.style.height = textarea.scrollHeight + "px"
+    };
+</script>
+
+</html>
